@@ -1,16 +1,23 @@
 ##  PACKAGE-CI整体功能介绍及安装操作
 PACKAGE-CI是一款完全由JavaScript语言编写的自动化运维工具，主要面向各种规模的互联网软件（前端）开发团队，致力于打造前端项目DevOps一体化解决方案，相信开源的力量。
+- GitHub开源地址：[https://github.com/yangrds/package-ci](https://github.com/yangrds/package-ci)
 - 博客主页[https://js-vue.com](https://js-vue.com/archives/package-ci)（最新文档将在这里更新）
 - 电子邮件地址[yangrd@tom.com](yangrd@tom.com)（可以随时给我发电子邮件）
 - 如果您在使用过程中有任何疑问，可以加入群聊提问。
 ![Xnip2022-06-14_07-55-49](https://package-ci.oss-cn-shanghai.aliyuncs.com/images/Xnip2022-06-14_07-55-49.jpg)
+### 软件开源信息
+|软件名|描述|开源协议|
+|-------|-------|-------|
+|package-ci-scheduler|集群调度器|MIT|
+|package-ci-cluster|集群节点应用|MIT|
+|package-ci-view|前端|MIT|
 ### 软件架构图
 ![功能架构图 ](https://package-ci.oss-cn-shanghai.aliyuncs.com/images/jg.svg)
 ### 功能特点
 1. 低内存占用，完全抛弃docker容器，由node衍生进程（process）替代容器。
 2. 轻量化应用，由node衍生的进程内仅有一个koa2应用，方便二次开发增减功能。
 3. 完整工作流，项目从开发到功能测试再到UAT交付验收，直至最后项目上线正式环境，都有严格的工作阶段。
-4. 大型集群节点，集群调度器[package-ci-scheduler]可管理无数台节点服务器[package-ci-cluster]。
+4. 大型集群节点，集群调度器[scheduler]可管理无数台节点服务器[cluster]。
 5. 项目迁移，在调度器平台编辑项目所属节点，即可将项目从A服务器迁移至B服务器。
 6. 指令集合，每个项目都有专属的指令集合，可以添加各种基于npm/yarn的指令，对项目进行各种常规操作（调度器源码已经屏蔽npm/yarn之外的任何指令）
 7. GIT管理，可以对项目进行GIT管理（只读性操作）比如【指定分支克隆】【检出指定分支】【删除指定分支（本地）】【切换分支】【Commit记录】等等。
@@ -57,14 +64,6 @@ PACKAGE-CI是一款完全由JavaScript语言编写的自动化运维工具，主
     "mac": "pkg . -t node14-macos-x64"
   }
 ```
-
-
-### 软件开源信息
-|软件名|描述|GitHub开源地址|开源协议|
-|-------|-------|-------|-------|
-|package-ci-scheduler|集群调度器|[package-ci-scheduler](https://github.com/yangrds/package-ci-scheduler.git)|MIT|
-|package-ci-cluster|集群节点应用|[package-ci-cluster](https://github.com/yangrds/package-ci-cluster.git)|MIT|
-|package-ci-view|前端|[package-ci-view](https://github.com/yangrds/package-ci-view.git)|MIT|
 ## 项目部署流程
 | 环境     | 权限                         | 说明                                                                       |
 | -------- | ---------------------------- | -------------------------------------------------------------------------- |
