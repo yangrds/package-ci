@@ -47,11 +47,11 @@
           </div>
           <div class="project-child-user">
             <span>DEV节点</span>
-            <span style="color: #409eff;">124.70.108.212</span>
+            <span style="color: #409eff;">{{item.dev_ip}}</span>
           </div>
           <div class="project-child-user" style="margin-bottom: 2px;">
             <span>PROD节点</span>
-            <span style="color: #409eff;">124.70.108.212</span>
+            <span style="color: #409eff;">{{item.prod_ip}}</span>
           </div>
           <div class="project-child-user" style="width:33.3%">
             <span>测试工单</span>
