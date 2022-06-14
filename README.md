@@ -5,6 +5,10 @@ PACKAGE-CI是一款完全由JavaScript语言编写的自动化运维工具，主
 - 电子邮件地址[yangrd@tom.com](yangrd@tom.com)（可以随时给我发电子邮件）
 - 如果您在使用过程中有任何疑问，可以加入群聊提问。
 ![Xnip2022-06-14_07-55-49](https://package-ci.oss-cn-shanghai.aliyuncs.com/images/Xnip2022-06-14_07-55-49.jpg)
+### 软件平台演示
+- 演示地址：[https://package.js-vue.com](https://package.js-vue.com/)
+- 演示账号：xiaohuajia
+- 演示密码：123
 ### 软件开源信息
 |软件名|描述|开源协议|
 |-------|-------|-------|
@@ -22,10 +26,6 @@ PACKAGE-CI是一款完全由JavaScript语言编写的自动化运维工具，主
 6. 指令集合，每个项目都有专属的指令集合，可以添加各种基于npm/yarn的指令，对项目进行各种常规操作（调度器源码已经屏蔽npm/yarn之外的任何指令）
 7. GIT管理，可以对项目进行GIT管理（只读性操作）比如【指定分支克隆】【检出指定分支】【删除指定分支（本地）】【切换分支】【Commit记录】等等。
 8. 团队成员，可以在平台内注册团队成员，每个成员可以和多个项目进行不同的身份绑定，使用不同权限对项目进行不同的日常操作。
-### 软件平台演示
-- 演示地址：[https://package.js-vue.com](https://package.js-vue.com/)
-- 演示账号：xiaohuajia
-- 演示密码：123
 ### PACKAGE-CI常规目录操作
 **package-ci-scheduler**
 1. 调度器首次启动会在系统用户目录下创建package-ci-lib文件夹，会创建如下文件/目录，自动创建
